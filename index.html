@@ -23,12 +23,21 @@ EMAIL: jiino@uci.edu
 <!--Name and bio-->
 <body class = "mintBack">
   <!-- Navigation Bar -->
-  <ul style="text-align:center" class = "black">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
+  <ul id="navbar" style="text-align:center" class = "black content sticky">
+    <li><a class="active" href="#about">About Me</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#resume">Resume</a></li>
   </ul>
+
+  <!-- Empty Div and breaks so that when the scroll bar scrolls to the section, it doesn't cover the title -->
+  <div id="about"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
 
   <!--Name-->
   <div class = "headerFont center black">
@@ -70,9 +79,14 @@ EMAIL: jiino@uci.edu
     </div>
   </div>
 
+  <!-- Empty Div and breaks so that when the scroll bar scrolls to the section, it doesn't cover the title -->
+  <div id="projects"></div>
+  <br>
+  <br>
+  <br>
 
   <!--Projects-->
-  <div class = "paleBlueBack black">
+  <div  class = "paleBlueBack black">
     <br>
     <!--Title and Icon-->
     <p class = "headerCenter">
@@ -99,9 +113,16 @@ EMAIL: jiino@uci.edu
     </strong></div>
     <br>
     <br>
+
+  <!-- Empty Div and breaks so that when the scroll bar scrolls to the section, it doesn't cover the title -->
+  <div id="experience"></div>
+  <br>
+  <br>
+  <br>
   </div>
   <!--Phanton closing div, removed to make color sections touch-->
 
+  
 
   <!--Work Experience-->
   <div class = "lavenderBack black">
@@ -152,9 +173,15 @@ EMAIL: jiino@uci.edu
       </div>
 
     </div>
-    
+
+  <!-- Empty Div and breaks so that when the scroll bar scrolls to the section, it doesn't cover the title -->
+  <div id="resume"></div>
+  <br>
+  <br>
+  <br>  
   </div>
 
+  
 
   <!--Resume-->
   <div class = "paleBlueBack black">
@@ -181,6 +208,23 @@ EMAIL: jiino@uci.edu
   <br>
   <br>
   </div>
+
+
+
+  <script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
 </body>
 
 </html>

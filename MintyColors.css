@@ -139,9 +139,14 @@ a.class1:active {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   overflow: hidden;
   background-color: rgb(1, 68, 21);
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 li {
@@ -158,4 +163,23 @@ li a {
 
 li a:hover {
   background-color: rgb(0, 131, 63);
+}
+
+
+/* Sticky Scroll bar */
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
