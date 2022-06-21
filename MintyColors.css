@@ -1,71 +1,74 @@
+/* Prevents horizontal scrolling */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
+
+/* Colors */
+
+/* Greens */
 .mint { color: palegreen}
 .mintBack{ background-color: rgb(202, 255, 202)}
-
 .seafoam { color: rgb(190, 255, 190)}
-
 .springGreen { color: springgreen}
-
 .mediumSea { color: mediumseagreen}
-
 .aquamarine { color: aquamarine}
-
 .forest { color: forestgreen}
 
 
+/* Blues */
 .paleBlue { color: paleturquoise}
 .paleBlueBack { background-color: paleturquoise}
 .mediumBlue { color: mediumblue}
-.mediumBlueBack { background-color: rgb(0, 132, 255)}
+.mediumBlueBack { background-color: rgb(151, 174, 255)}
 
 
-
+/* Purples */
 .plum { color: plum}
-
 .lavender { color: lavender}
 .lavenderBack { background-color: lavender}
-
 .purple { color: rebeccapurple}
 
 
+/* Misc. Colors */
 .paleYellow { color: papayawhip}
-
 .white { color: white}
+.black { color: black}
 
 
-a:link {
+/* Link Colors */
+a.class1:link {
     color: rgb(255, 0, 212);
     background-color: transparent;
     text-decoration: none;
   }
-a:visited {
+a.class1:visited {
     color: rgb(121, 0, 74);
     background-color: transparent;
     text-decoration: none;
   }
-a:hover {
+a.class1:hover {
     color: rgb(145, 98, 255);
     background-color: transparent;
     text-decoration: underline;
   }
-a:active {
+a.class1:active {
     color: rgb(68, 0, 131);
     background-color: transparent;
     text-decoration: underline;
   }
 
   
-
+/* Font Sizes */
 .titleFont {font-size: 100px}
 .headerFont {font-size: 60px}
 .headerFont2 {font-size: 40px}
 .bodyFont {font-size: 30px}
 .bodyFontSmall {font-size: 20px}
 
+
+/* Margins */
 .headerCenter {
     margin-left: 40%;
   }
@@ -100,7 +103,7 @@ a:active {
 }
 
 
-
+/* Icon sizes and positioning */
 .bigIcon {
     width: 20%;
     height: 20%
@@ -131,3 +134,28 @@ a:active {
   height: 20%
 }
 
+
+/* Navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(1, 68, 21);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(0, 131, 63);
+}
