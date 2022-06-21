@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .mint { color: palegreen}
 .mintBack{ background-color: rgb(202, 255, 202)}
 
