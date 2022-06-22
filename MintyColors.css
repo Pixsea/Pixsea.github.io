@@ -89,8 +89,8 @@ a.class1:active {
 
 .showcaseImage {
     margin-left: 10%;
-    width: 80%;
-    height: 80%
+    /* width: 80%;
+    height: 80% */
 }
 .showcaseVideo {
     margin-left: 10%;
@@ -147,6 +147,7 @@ ul {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  z-index: 3;
 }
 
 li {
