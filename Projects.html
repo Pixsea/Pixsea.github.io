@@ -101,9 +101,14 @@ EMAIL: jiino@uci.edu
               diagrams of how to perform the current task, or arrows that glow over the workstations where the player should be.
               <br>
               <br>
-              As a Programmer, I was primarily focused on fixing bugs, implementing new tasks and systems, and combining previously created features into
-              a cohesive level.  I worked with an established code base contributed to by many different programmers, many of whom were no longer involved
-              with the project.  Because of this, I had to familiarize myself with the established code of previous programmers, so that I could work on the game.
+              As a Programmer, I was primarily focused on creating an event system for the game.  implemented an event system for the game.  Previously,
+              all of our minigames and tests were connected.  When one minigame would end, it would directly call the next relevant script.  This created
+              high dependency between objects, making it difficult to make small changes to the game.  The event system fixed this, not needing references
+              to the scripts to be called, allowing parts to be easily added and interchanged.  I was also tasked with fixing bugs, implementing new tasks
+              and systems, and combining previously created features into a cohesive level.  I worked with an established code base contributed to by many
+              different programmers, many of whom were no longer involved with the project.  Because of this, I had to familiarize myself with the established
+              code of previous programmers, so that I could work on the game.
+
             
 
               <br>
@@ -151,12 +156,17 @@ EMAIL: jiino@uci.edu
         <!--Description-->
         <div class = "bodyFontSmall col-lg-7">
           Moist Party is a 4 player game where you play as slime people competing in a variety of lab test minigames, akin to Mario party.  This was
-          my capstone game project at UCI.  It was created by a 6 person team in which I served as a Designer and Programmer.  I primarily worked
-          with the minigames themselves, designing and programming a variety of games ranging from platformers, to top down brawlers, to quick
-          reaction competitions.
+          my capstone game project at UCI.  It was created by a 6 person team in which I served as a Designer and Programmer.  
           <br>
           <br>
-
+          As a programmer, I primarily worked with the minigames themselves, designing and programming a variety of games ranging from platformers,
+          to top down brawlers, to quick reaction competitions.  To help other team members create minigames, I designed a base script that pre-programs
+          the base functionality of the minigames.  For example, the pre-round countdown, ending screen, pre-game directions, and scene transitions were
+          all built in.  If any specific thing needed to be added, the coroutines for each phase of the game could be overridden to create custom behavior.
+          I also programmed the scoring and scene transition systems for the game, utilizing static objects to allow the players’ overall score to persist
+          between scenes.
+          <br>
+          <br>
           I also worked on gathering feedback for our minigames from playtesters, supervising their play sessions with the game. I notated places where they
           would get confused or stuck, as well as ask them questions about what they thought of each minigame.  From their responses, I determined the problems
           they were having, and the solutions we could implement to fix them.  Polish was another one of my responsibilities.  I focused on "finding the fun"
