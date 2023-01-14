@@ -135,6 +135,13 @@ a.class1:active {
 }
 
 
+/*  Inline icon bar */
+.inline-block {
+  display: inline-block;
+  margin-left:.4%;
+  margin-right:.4%;
+}
+
 /* Navigation bar */
 ul {
   list-style-type: none;
